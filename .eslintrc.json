@@ -1,3 +1,13 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:react/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "root": true,
+  "rules": {
+    "no-console": ["warn"],
+    "react/react-in-jsx-scope": "off",
+    "react/no-unknown-property": ["warn"],
+    "react/jsx-curly-brace-presence": ["error"],
+    "@typescript-eslint/no-unused-vars": ["warn"]
+  }
 }
