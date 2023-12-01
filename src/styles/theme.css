@@ -1,0 +1,19 @@
+:root {
+  /* Texts */
+  --text-main: #f3f3f3;
+  --text-dim: #76808c;
+
+  /* Backgrounds */
+  --bg-main: #0e141b;
+  --bg-highlight: #1e2329;
+  --bg-hover: #313843;
+  --bg-secondary: #14344b;
+  --bg-tertiary: #212b45;
+
+  /* Colours */
+  --color-primary: #66c0f4;
+  --color-secondary: #4b619b;
+  --color-accent-green: #a1cd44;
+  --color-accent-red: #cd5444;
+  --color-accent-yellow: #c1b15f;
+}
