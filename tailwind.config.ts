@@ -26,6 +26,7 @@ const config: Config = {
       },
 
       colors: {
+        "color-text-main": "var(--text-main)",
         "color-primary": "var(--color-primary)",
         "color-secondary": "var(--color-secondary)",
         "color-accent-green": "var(--color-accent-green)",
@@ -36,6 +37,10 @@ const config: Config = {
       textColor: {
         main: "var(--text-main)",
         dim: "var(--text-dim)",
+      },
+
+      spacing: {
+        4.5: "1.125rem",
       },
     },
   },
