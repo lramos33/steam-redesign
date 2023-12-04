@@ -14,7 +14,7 @@ export function Footer() {
           </p>
         </div>
 
-        <div className="flex gap-32 text-main">
+        <div className="flex gap-32">
           <div className="flex flex-col gap-4">
             <p>About Valve</p>
             <p>Jobs</p>

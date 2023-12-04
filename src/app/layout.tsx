@@ -11,7 +11,7 @@ import { cn } from "@/helpers/tailwind.helper";
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={cn(MotivaSans.className, "flex min-h-screen flex-col")}>
+      <body className={cn(MotivaSans.className, "flex min-h-screen flex-col text-main")}>
         <Header />
         <main className="flex flex-1 flex-col">{children}</main>
         <Footer />
