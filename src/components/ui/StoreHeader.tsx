@@ -9,7 +9,7 @@ export function StoreHeader() {
   const pathname = usePathname();
 
   return (
-    <header className="flex items-center justify-between bg-background-tertiary px-3 py-1.5 text-main">
+    <header className="flex items-center justify-between bg-background-tertiary px-3 py-1.5">
       <div className="flex gap-1.5">
         <Link href="/store/home">
           <Toggle pressed={pathname.startsWith("/store/home")}>Home</Toggle>
