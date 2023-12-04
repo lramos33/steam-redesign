@@ -1,13 +1,12 @@
-import Image from "next/image";
-
-import Logo from "../../../public/logo.svg";
+import { SteamLogo } from "../vectors/SteamLogo";
 
 export function Footer() {
   return (
     <footer className="flex justify-center bg-background-highlight">
       <div className="mb-24 mt-12 flex h-fit w-full max-w-8xl justify-between">
         <div className="space-y-8">
-          <Image src={Logo} alt="home" className="h-14" />
+          <SteamLogo height="56" width="210" fill="#76808C" />
+
           <p className="max-w-[360px] text-sm text-dim">
             © 2023 Valve Corporation. All rights reserved. <br />
             All trademarks are property of their respective owners in the US and other countries. <br />
