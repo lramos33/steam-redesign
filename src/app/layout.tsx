@@ -1,8 +1,8 @@
 import "../styles/globals.css";
 import "../styles/theme.css";
 
-import { Footer } from "@/components/ui/Footer";
-import { Header } from "@/components/ui/Header";
+import { Footer } from "@/components/layout/Footer";
+import { Header } from "@/components/layout/Header";
 
 import { MotivaSans } from "@/styles/fonts";
 

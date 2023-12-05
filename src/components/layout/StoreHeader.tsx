@@ -31,7 +31,7 @@ export function StoreHeader() {
         <Toggle
           format="icon"
           variant="secondary"
-          className="[&[data-state=on]>svg]:fill-color-text-main"
+          className="hover:bg-white/10 [&[data-state=on]>svg]:fill-color-text-main"
           pressed={pathname.startsWith("/store/wishlist")}
         >
           <Icons.LuHeart />
@@ -40,7 +40,7 @@ export function StoreHeader() {
         <Toggle
           format="icon"
           variant="secondary"
-          className="[&[data-state=on]>svg]:fill-color-text-main"
+          className="hover:bg-white/10 [&[data-state=on]>svg]:fill-color-text-main"
           pressed={pathname.startsWith("/store/cart")}
         >
           <Icons.LuShoppingCart />
