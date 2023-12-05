@@ -1,7 +1,19 @@
+import { cn } from "@/helpers/tailwind.helper";
+
 interface BadgeProps {
+  className?: string;
   children: React.ReactNode;
 }
 
-export function Badge({ children }: BadgeProps) {
-  return <span className="inline-flex items-center rounded bg-background-highlight px-3 py-2 text-xs text-dim">{children}</span>;
+export function Badge({ children, className }: BadgeProps) {
+  return (
+    <span
+      className={cn(
+        "flex h-8 w-fit select-none items-center justify-center rounded bg-background-tertiary px-3 text-xs text-dim",
+        className
+      )}
+    >
+      {children}
+    </span>
+  );
 }
