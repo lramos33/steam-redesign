@@ -16,7 +16,7 @@ import { STORE_DISCOVER_MOCK } from "@/mocks/store-discover";
 
 export default function Page() {
   return (
-    <div className="flex flex-1 flex-col items-center bg-background-main">
+    <div className="flex flex-1 flex-col items-center bg-[#00030d] ">
       <div className="mb-32 mt-16 flex w-full max-w-8xl flex-1 flex-col gap-16">
         <div className="space-y-2">
           <h1 className="text-3xl font-bold">Lramos33 Discovery Feed</h1>
@@ -25,7 +25,7 @@ export default function Page() {
 
         <div className="flex flex-col gap-8">
           {STORE_DISCOVER_MOCK.map(game => (
-            <div key={game.id} className="flex gap-2 rounded bg-background-highlight p-4.5">
+            <div key={game.id} className="flex gap-2 rounded bg-background-main p-4.5">
               <Image src={game.thumbs.main} height={288} width={460} alt="game image" className="rounded" />
 
               <div className="flex flex-col justify-between">
