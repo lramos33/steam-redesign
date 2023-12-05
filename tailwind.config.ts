@@ -39,6 +39,14 @@ const config: Config = {
         dim: "var(--text-dim)",
       },
 
+      borderColor: {
+        "background-main": "var(--bg-main)",
+        "background-highlight": "var(--bg-highlight)",
+        "background-hover": "var(--bg-hover)",
+        "background-secondary": "var(--bg-secondary)",
+        "background-tertiary": "var(--bg-tertiary)",
+      },
+
       spacing: {
         4.5: "1.125rem",
       },
