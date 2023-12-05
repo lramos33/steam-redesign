@@ -6,6 +6,8 @@ import { ComponentPropsWithoutRef, ElementRef, forwardRef } from "react";
 
 import { cn } from "@/helpers/tailwind.helper";
 
+// ================================== //
+
 const toggleVariants = cva("rounded flex items-center justify-center ", {
   variants: {
     format: {
@@ -13,7 +15,9 @@ const toggleVariants = cva("rounded flex items-center justify-center ", {
       default: "h-11 px-7 gap-2",
     },
     variant: {
-      secondary: "hover:bg-white/10 data-[state=on]:bg-color-secondary",
+      secondary: "hover:bg-background-hover data-[state=on]:bg-color-secondary",
+      outline:
+        "border border-background-highlight hover:border-background-hover data-[state=on]:border-none data-[state=on]:bg-color-secondary",
       text: "font-bold text-lg text-main px-0 h-fit data-[state=on]:text-color-primary",
     },
   },
