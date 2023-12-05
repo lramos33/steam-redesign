@@ -44,10 +44,12 @@ export default function Page() {
                     </p>
                   </div>
 
-                  <div className="space-x-1">
+                  <div className="flex gap-1">
                     {game.tags.map(tag => (
                       <Badge key={tag}>{tag}</Badge>
                     ))}
+
+                    <Badge className="w-8 cursor-pointer text-xl hover:bg-background-hover">+</Badge>
                   </div>
 
                   <div className="flex items-center gap-2 text-dim">
