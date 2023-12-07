@@ -14,6 +14,7 @@ const buttonVariants = cva("rounded flex items-center justify-center h-11", {
       default: "px-6 gap-2",
     },
     variant: {
+      link: "px-0 w-fit h-fit hover:underline rounded-none",
       outline: "border border-background-highlight hover:border-background-hover",
       highlight: "bg-background-highlight hover:bg-background-hover",
       ghost: "hover:bg-background-hover",

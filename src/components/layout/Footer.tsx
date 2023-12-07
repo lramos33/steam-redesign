@@ -1,3 +1,5 @@
+import { Icons } from "../others/Icons";
+import { Button } from "../primitives/Button";
 import { SteamLogo } from "../vectors/SteamLogo";
 
 export function Footer() {
@@ -7,7 +9,7 @@ export function Footer() {
         <div className="space-y-8">
           <SteamLogo height="56" width="210" fill="#76808C" />
 
-          <p className="max-w-[360px] text-sm text-dim">
+          <p className="max-w-[340px] text-sm text-dim">
             © 2023 Valve Corporation. All rights reserved. <br />
             All trademarks are property of their respective owners in the US and other countries. <br />
             VAT included in all prices where applicable.
@@ -16,25 +18,30 @@ export function Footer() {
 
         <div className="flex gap-32">
           <div className="flex flex-col gap-4">
-            <p>About Valve</p>
-            <p>Jobs</p>
-            <p>Steam works</p>
-            <p>Steam Distribution</p>
-            <p>Support</p>
+            <Button variant="link">About Valve</Button>
+            <Button variant="link">Jobs</Button>
+            <Button variant="link">Steam works</Button>
+            <Button variant="link">Steam Distribution</Button>
+            <Button variant="link">Support</Button>
           </div>
 
           <div className="flex flex-col gap-4">
-            <p>Privacy Policy</p>
-            <p>Legal</p>
-            <p>Steam Subscriber Agreement</p>
-            <p>Refunds</p>
-            <p>Cookies</p>
+            <Button variant="link">Privacy Policy</Button>
+            <Button variant="link">Legal</Button>
+            <Button variant="link">Steam Subscriber Agreement</Button>
+            <Button variant="link">Refunds</Button>
+            <Button variant="link">Cookies</Button>
           </div>
         </div>
 
         <div className="flex gap-4">
-          <p className="flex h-12 w-12 items-center justify-center rounded bg-background-hover text-2xl text-dim">f</p>
-          <p className="flex h-12 w-12 items-center justify-center rounded bg-background-hover text-2xl text-dim">X</p>
+          <Button asIcon className="h-12 w-12 bg-[#76808C0D] text-dim" href="https://www.facebook.com/Steam" isExternal>
+            <Icons.FaFacebookF />
+          </Button>
+
+          <Button asIcon className="h-12 w-12 bg-[#76808C0D] text-dim" href="https://x.com/Steam" isExternal>
+            <Icons.FaXTwitter />
+          </Button>
         </div>
       </div>
     </footer>
