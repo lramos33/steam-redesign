@@ -38,4 +38,8 @@ const Toggle = forwardRef<TToggleRef, TToggleProps>(({ className, variant, forma
 
 Toggle.displayName = "Toggle";
 
+// ================================== //
+
 export { Toggle };
+
+export type TVariantProps = VariantProps<typeof toggleVariants>;
