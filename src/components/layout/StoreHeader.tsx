@@ -30,12 +30,15 @@ export function StoreHeader() {
         <Toggle pressed={pathname.startsWith("/store/points-shop")} className="hover:bg-white hover:bg-opacity-10">
           Points Shop
         </Toggle>
+
         <Toggle pressed={pathname.startsWith("/store/curators")} className="hover:bg-white hover:bg-opacity-10">
           Curators
         </Toggle>
+
         <Toggle pressed={pathname.startsWith("/store/gift-cards")} className="hover:bg-white hover:bg-opacity-10">
           Gift Cards
         </Toggle>
+
         <Toggle pressed={pathname.startsWith("/store/news")} className="hover:bg-white hover:bg-opacity-10">
           News
         </Toggle>
