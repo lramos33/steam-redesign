@@ -1,5 +1,5 @@
 import { MdThumbDown, MdThumbUp } from "react-icons/md";
-import { LuShoppingCart, LuHeart, LuSettings, LuSearch } from "react-icons/lu";
+import { LuShoppingCart, LuHeart, LuSettings, LuSearch, LuChevronRight, LuChevronLeft } from "react-icons/lu";
 import { FaXTwitter, FaFacebookF, FaSteam, FaWindows, FaApple } from "react-icons/fa6";
 
 export const Icons = {
@@ -7,6 +7,8 @@ export const Icons = {
   LuHeart,
   LuSettings,
   LuSearch,
+  LuChevronRight,
+  LuChevronLeft,
   // ================================== //
   MdThumbDown,
   MdThumbUp,
