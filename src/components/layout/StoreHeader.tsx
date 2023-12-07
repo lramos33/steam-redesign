@@ -12,19 +12,33 @@ export function StoreHeader() {
     <header className="flex items-center justify-between bg-background-tertiary px-3 py-1.5">
       <div className="flex gap-1.5">
         <Link href="/store/home">
-          <Toggle pressed={pathname.startsWith("/store/home")}>Home</Toggle>
+          <Toggle pressed={pathname.startsWith("/store/home")} className="hover:bg-white hover:bg-opacity-10">
+            Home
+          </Toggle>
         </Link>
 
-        <Toggle pressed={pathname.startsWith("/store/browse")}>Browse</Toggle>
+        <Toggle pressed={pathname.startsWith("/store/browse")} className="hover:bg-white hover:bg-opacity-10">
+          Browse
+        </Toggle>
 
         <Link href="/store/discover">
-          <Toggle pressed={pathname.startsWith("/store/discover")}>Discover</Toggle>
+          <Toggle pressed={pathname.startsWith("/store/discover")} className="hover:bg-white hover:bg-opacity-10">
+            Discover
+          </Toggle>
         </Link>
 
-        <Toggle pressed={pathname.startsWith("/store/points-shop")}>Points Shop</Toggle>
-        <Toggle pressed={pathname.startsWith("/store/curators")}>Curators</Toggle>
-        <Toggle pressed={pathname.startsWith("/store/gift-cards")}>Gift Cards</Toggle>
-        <Toggle pressed={pathname.startsWith("/store/news")}>News</Toggle>
+        <Toggle pressed={pathname.startsWith("/store/points-shop")} className="hover:bg-white hover:bg-opacity-10">
+          Points Shop
+        </Toggle>
+        <Toggle pressed={pathname.startsWith("/store/curators")} className="hover:bg-white hover:bg-opacity-10">
+          Curators
+        </Toggle>
+        <Toggle pressed={pathname.startsWith("/store/gift-cards")} className="hover:bg-white hover:bg-opacity-10">
+          Gift Cards
+        </Toggle>
+        <Toggle pressed={pathname.startsWith("/store/news")} className="hover:bg-white hover:bg-opacity-10">
+          News
+        </Toggle>
       </div>
 
       <div className="flex gap-1.5">

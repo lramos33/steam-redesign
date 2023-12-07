@@ -33,7 +33,7 @@ type TToggleRef = ElementRef<typeof TogglePrimitive.Root>;
 type TToggleProps = ComponentPropsWithoutRef<typeof TogglePrimitive.Root> & VariantProps<typeof toggleVariants>;
 
 const Toggle = forwardRef<TToggleRef, TToggleProps>(({ className, variant, format, ...props }, ref) => (
-  <TogglePrimitive.Root ref={ref} className={cn(toggleVariants({ variant, format, className }))} {...props} />
+  <TogglePrimitive.Root ref={ref} className={cn(toggleVariants({ variant, format }), className)} {...props} />
 ));
 
 Toggle.displayName = "Toggle";
