@@ -4,8 +4,8 @@ import { Badge } from "@/components/ui/Badge";
 import { Discount } from "@/components/ui/Discount";
 import { ReviewRatio } from "@/components/ui/ReviewRatio";
 
-import { Toggle } from "@/components/primitives/Toggle";
 import { Button } from "@/components/primitives/Button";
+import { WishlistButton } from "@/components/ui/WishlistButton";
 
 import { Icons } from "@/components/others/Icons";
 
@@ -16,7 +16,7 @@ import { STORE_DISCOVER_MOCK } from "@/mocks/store-discover";
 
 export default function Page() {
   return (
-    <div className="flex flex-1 flex-col items-center bg-[#00030d] ">
+    <div className="flex flex-1 flex-col items-center bg-[#00030d]">
       <div className="mb-32 mt-16 flex w-full max-w-8xl flex-1 flex-col gap-16">
         <div className="space-y-2">
           <h1 className="text-3xl font-bold">Lramos33 Discovery Feed</h1>
@@ -65,9 +65,7 @@ export default function Page() {
                   <div className="absolute right-0 flex gap-2">
                     <Button variant="outline">Ignore</Button>
 
-                    <Toggle format="icon" variant="outline" className="[&[data-state=on]>svg]:fill-color-text-main">
-                      <Icons.LuHeart />
-                    </Toggle>
+                    <WishlistButton format="icon" />
                   </div>
                 </div>
 
