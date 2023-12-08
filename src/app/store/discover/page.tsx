@@ -26,11 +26,17 @@ export default function Page() {
         <div className="flex flex-col gap-8">
           {STORE_DISCOVER_MOCK.map(game => (
             <div key={game.id} className="flex gap-2 rounded bg-background-main p-4.5">
-              <Image src={game.thumbs.main} height={288} width={460} alt="game image" className="rounded" />
+              <Image
+                src={game.thumbs.main}
+                height={215}
+                width={460}
+                alt="game image"
+                className="h-[292px] w-[624px] rounded object-cover"
+              />
 
-              <div className="flex flex-col justify-between">
+              <div className="flex flex-col gap-2">
                 {game.thumbs.secondary.map(thumb => (
-                  <Image key={thumb} src={thumb} width={160} height={90} alt="game image" className="rounded" />
+                  <Image key={thumb} src={thumb} width={256} height={144} alt="game image" className="h-[92px] w-44 rounded object-cover" />
                 ))}
               </div>
 
@@ -64,7 +70,6 @@ export default function Page() {
 
                   <div className="absolute right-0 flex gap-2">
                     <Button variant="outline">Ignore</Button>
-
                     <WishlistButton format="icon" />
                   </div>
                 </div>
