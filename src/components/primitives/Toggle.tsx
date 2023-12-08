@@ -17,7 +17,7 @@ const toggleVariants = cva("rounded flex items-center justify-center ", {
     variant: {
       secondary: "hover:bg-background-hover data-[state=on]:bg-color-secondary",
       outline:
-        "border border-background-highlight hover:border-background-hover data-[state=on]:border-none data-[state=on]:bg-color-secondary",
+        "border border-background-highlight hover:border-background-hover data-[state=on]:border-none data-[state=on]:bg-background-highlight",
       text: "font-bold text-lg text-main px-0 h-fit data-[state=on]:text-color-primary",
     },
   },
