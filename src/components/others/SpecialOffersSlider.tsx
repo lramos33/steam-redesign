@@ -4,6 +4,8 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
+import { Link } from "@/lib/next";
+
 import { Icons } from "./Icons";
 import { Discount } from "../ui/Discount";
 import { Button } from "../primitives/Button";
@@ -29,74 +31,40 @@ export function SpecialOfferSlider() {
         bulletClass: "swiper-pagination-bullet bg-color-secondary rounded-full h-2 w-8",
       }}
     >
-      <SwiperSlide className="flex items-center justify-center rounded px-12">
-        <div className="flex h-full w-full gap-4 rounded">
-          {STORE_HOME_SPECIAL_OFFERS_MOCK.slice(0, 3).map(game => (
-            <div key={game.id} className="flex flex-1 flex-col gap-4 rounded bg-background-main p-4">
-              <Image src={game.thumb} width={460} height={215} alt="game image" className="h-48 flex-1 rounded object-cover" />
+      {[0, 1, 2].map(page => (
+        <SwiperSlide key={page} className="flex items-center justify-center rounded px-12">
+          <div className="flex h-full w-full gap-4 rounded">
+            {STORE_HOME_SPECIAL_OFFERS_MOCK.slice(page * 3, (page + 1) * 3).map(game => (
+              <div key={game.id} className="flex flex-1 flex-col gap-4 rounded bg-background-main p-4">
+                <Link className="h-48 overflow-hidden" href="#special">
+                  <Image
+                    src={game.thumb}
+                    width={460}
+                    height={215}
+                    alt="game image"
+                    className="h-48 flex-1 transform rounded object-cover transition-transform hover:scale-105"
+                  />
+                </Link>
 
-              <h2 className="text-xl font-bold">{game.name}</h2>
+                <Link href="#special">
+                  <h2 className="text-xl font-bold">{game.name}</h2>
+                </Link>
 
-              <div className="flex gap-2 self-end">
-                <Discount
-                  fullPrice={game.price}
-                  endsAt={game.discount.endsAt}
-                  percentage={game.discount.percentage}
-                  discountedPrice={game.discount.discountedPrice}
-                />
+                <div className="flex gap-2 self-end">
+                  <Discount
+                    fullPrice={game.price}
+                    endsAt={game.discount.endsAt}
+                    percentage={game.discount.percentage}
+                    discountedPrice={game.discount.discountedPrice}
+                  />
 
-                <WishlistButton format="icon" />
+                  <WishlistButton format="icon" />
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </SwiperSlide>
-
-      <SwiperSlide className="flex items-center justify-center rounded px-12">
-        <div className="flex h-full w-full gap-4 rounded">
-          {STORE_HOME_SPECIAL_OFFERS_MOCK.slice(3, 6).map(game => (
-            <div key={game.id} className="flex flex-1 flex-col gap-4 rounded bg-background-main p-4">
-              <Image src={game.thumb} width={460} height={215} alt="game image" className="h-48 flex-1 rounded object-cover" />
-
-              <h2 className="text-xl font-bold">{game.name}</h2>
-
-              <div className="flex gap-2 self-end">
-                <Discount
-                  fullPrice={game.price}
-                  endsAt={game.discount.endsAt}
-                  percentage={game.discount.percentage}
-                  discountedPrice={game.discount.discountedPrice}
-                />
-
-                <WishlistButton format="icon" />
-              </div>
-            </div>
-          ))}
-        </div>
-      </SwiperSlide>
-
-      <SwiperSlide className="flex items-center justify-center rounded px-12">
-        <div className="flex h-full w-full gap-4 rounded">
-          {STORE_HOME_SPECIAL_OFFERS_MOCK.slice(6, 9).map(game => (
-            <div key={game.id} className="flex flex-1 flex-col gap-4 rounded bg-background-main p-4">
-              <Image src={game.thumb} width={460} height={215} alt="game image" className="h-48 flex-1 rounded object-cover" />
-
-              <h2 className="text-xl font-bold">{game.name}</h2>
-
-              <div className="flex gap-2 self-end">
-                <Discount
-                  fullPrice={game.price}
-                  endsAt={game.discount.endsAt}
-                  percentage={game.discount.percentage}
-                  discountedPrice={game.discount.discountedPrice}
-                />
-
-                <WishlistButton format="icon" />
-              </div>
-            </div>
-          ))}
-        </div>
-      </SwiperSlide>
+            ))}
+          </div>
+        </SwiperSlide>
+      ))}
 
       <Button asIcon variant="unstyled" className="prev-slide absolute left-2 top-1/2 z-50 -translate-y-1/2">
         <Icons.LuChevronLeft className="h-8 w-8" />
