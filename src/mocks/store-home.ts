@@ -18,7 +18,7 @@ export const STORE_HOME_FEATURED_MOCK = [
     discount: {
       percentage: 30,
       discountedPrice: 4199,
-      endsAt: "2023-08-22T00:00:00.000",
+      endsAt: "2025-08-22T00:00:00.000",
     },
   },
   {
@@ -93,5 +93,107 @@ export const STORE_HOME_FEATURED_MOCK = [
     },
     tags: ["Sports", "Football (Soccer)", "PvP", "PvE"],
     price: 7999,
+  },
+];
+
+export const STORE_HOME_SPECIAL_OFFERS_MOCK = [
+  {
+    id: "a2955268-1cfa-4893-ae3d-caece60c5238",
+    name: "The Last of Us: Part 1",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/1888930/header.jpg?t=1697567304",
+    price: 5999,
+    discount: {
+      percentage: 20,
+      discountedPrice: 4799,
+      endsAt: "2025-11-02T00:00:00.000",
+    },
+  },
+  {
+    id: "bdbf7030-67ce-4071-8666-b2b07fdc8195",
+    name: "Resident Evil 4",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/2050650/header_alt_assets_0.jpg?t=1701394560",
+    price: 5999,
+    discount: {
+      percentage: 30,
+      discountedPrice: 4199,
+      endsAt: "2025-11-06T00:00:00.000",
+    },
+  },
+  {
+    id: "38bb97d3-d352-4700-82ce-969476fe52a4",
+    name: "Monster Hunter: World",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/582010/header.jpg?t=1702040028",
+    price: 3999,
+    discount: {
+      percentage: 30,
+      discountedPrice: 2799,
+      endsAt: "2025-12-25T00:00:00.000",
+    },
+  },
+  {
+    id: "a145fc8c-b566-4ff7-b5d6-4e80abf2a953",
+    name: "Cyberpunk 2077",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header_alt_assets_5.jpg?t=1702306332",
+    price: 9999,
+    discount: {
+      percentage: 50,
+      discountedPrice: 4999,
+      endsAt: "2024-01-10T00:00:00.000",
+    },
+  },
+  {
+    id: "6a9a9774-efde-4489-887b-3a81769f9995",
+    name: "Red Dead Redemption 2",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg?t=1695140956",
+    price: 5999,
+    discount: {
+      percentage: 30,
+      discountedPrice: 4199,
+      endsAt: "2025-11-20T00:00:00.000",
+    },
+  },
+  {
+    id: "7d6bda31-bd10-46dd-9df3-f25ba8456143",
+    name: "Assassin's Creed Valhalla",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/2208920/header.jpg?t=1697654233",
+    price: 4999,
+    discount: {
+      percentage: 80,
+      discountedPrice: 999,
+      endsAt: "2025-12-09T00:00:00.000",
+    },
+  },
+  {
+    id: "96b6f6b9-b624-483d-93d5-5de97453ce0e",
+    name: "Little Nightmares II",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/860510/header.jpg?t=1701305825",
+    price: 1999,
+    discount: {
+      percentage: 20,
+      discountedPrice: 1599,
+      endsAt: "2025-12-10T00:00:00.000",
+    },
+  },
+  {
+    id: "91b109ba-0216-40f8-98be-3f8fdf539a9a",
+    name: "Plants vs. Zombies™ Garden Warfare 2",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/1922560/header.jpg?t=1652720468",
+    price: 1999,
+    discount: {
+      percentage: 40,
+      discountedPrice: 1199,
+      endsAt: "2025-12-12T00:00:00.000",
+    },
+  },
+  {
+    id: "3b325a56-fd55-4804-a27d-88ddbc07781a",
+    name: "Beyond: Two Souls",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/960990/header.jpg?t=1667468566",
+    price: 1999,
+    discount: {
+      percentage: 60,
+      discountedPrice: 799,
+      endsAt: "2025-12-24T00:00:00.000",
+    },
   },
 ];

@@ -2,7 +2,10 @@ import Image from "next/image";
 
 import HomeGif from "../../../../public/home.gif";
 
+import { Button } from "@/components/primitives/Button";
+
 import { FeaturedSlider } from "@/components/others/FeaturedSlider";
+import { SpecialOfferSlider } from "@/components/others/SpecialOffersSlider";
 
 export default function Page() {
   return (
@@ -11,8 +14,16 @@ export default function Page() {
         <Image src={HomeGif} alt="home" width={1440} className="h-[468px] object-cover" />
 
         <div className="space-y-2">
-          <h2 className="ml-12 text-lg">FEATURED & RECOMMENDED</h2>
+          <h2 className="ml-12 text-lg">Featured</h2>
           <FeaturedSlider />
+        </div>
+
+        <div className="space-y-2">
+          <div className="mx-12 flex items-center justify-between">
+            <h2 className="text-lg">Special Offers</h2>
+            <Button variant="link">See more</Button>
+          </div>
+          <SpecialOfferSlider />
         </div>
       </div>
     </div>
