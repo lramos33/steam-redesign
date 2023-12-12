@@ -197,3 +197,106 @@ export const STORE_HOME_SPECIAL_OFFERS_MOCK = [
     },
   },
 ];
+
+export const STORE_HOME_BROWSE_BY_CATEGORY = [
+  {
+    id: "68c58950-3352-4686-9c53-fc6fedaa4d61",
+    name: "Puzzle",
+    thumb: "https://store.steampowered.com/categories/homepageimage/category/puzzle_matching/?cc=us&l=english",
+  },
+  {
+    id: "dadbbdc7-807d-4872-8317-d1f226b7611b",
+    name: "Rogue-like",
+    thumb: "https://store.steampowered.com/categories/homepageimage/category/rogue_like_rogue_lite?cc=us&l=english",
+  },
+  {
+    id: "9598c21d-a88e-48c6-b983-0c2ceb9ca2b7",
+    name: "Anime",
+    thumb: "https://store.steampowered.com/categories/homepageimage/category/anime?cc=us&l=english",
+  },
+  {
+    id: "4f998d8b-1e67-4c18-8a15-2597a7e786f0",
+    name: "Virtual Reality",
+    thumb: "https://store.steampowered.com/categories/homepageimage/vr?cc=us&l=english",
+  },
+  {
+    id: "b0c1aeb8-312c-4e88-b94a-49e3e0d4eb92",
+    name: "City & Settlement",
+    thumb: "https://store.steampowered.com/categories/homepageimage/category/strategy_cities_settlements?cc=us&l=english",
+  },
+  {
+    id: "f6b6d2e1-9a38-46cc-8944-073759d1a43c",
+    name: "All Sports",
+    thumb: "https://store.steampowered.com/categories/homepageimage/category/sports?cc=us&l=english",
+  },
+  {
+    id: "bc7a0c34-3284-43c0-8a7e-42d4d3db6251",
+    name: "Strategy",
+    thumb: "https://store.steampowered.com/categories/homepageimage/category/strategy?cc=us&l=english",
+  },
+  {
+    id: "af0a7c9b-df2d-4b17-97c5-d5ed13cf23a4",
+    name: "Visual Novel",
+    thumb: "https://store.steampowered.com/categories/homepageimage/category/visual_novel?cc=us&l=english",
+  },
+  {
+    id: "e92d9a26-0c38-43b4-bc04-35b197f5e8c6",
+    name: "RPG",
+    thumb: "https://store.steampowered.com/categories/homepageimage/category/rpg?cc=us&l=english",
+  },
+  {
+    id: "a1b2c3d4-5678-90ab-cdef-0123456789ab",
+    name: "Sci-fi & Cyberpunk",
+    thumb: "https://store.steampowered.com/categories/homepageimage/category/science_fiction?cc=us&l=english",
+  },
+  {
+    id: "567890ab-cdef-0123-4567-89ab01234567",
+    name: "Action",
+    thumb: "https://store.steampowered.com/categories/homepageimage/category/action?cc=us&l=english",
+  },
+  {
+    id: "98765432-10ab-cdef-0123-456789abcdef",
+    name: "Free to play",
+    thumb: "https://store.steampowered.com/categories/homepageimage/freetoplay?cc=us&l=english",
+  },
+  {
+    id: "654321ab-cdef-0123-4567-89abcdef0123",
+    name: "Racing",
+    thumb: "https://store.steampowered.com/categories/homepageimage/category/racing?cc=us&l=english",
+  },
+  {
+    id: "3210fedc-ba98-7654-3210-fedcba987654",
+    name: "Story-rich",
+    thumb: "https://store.steampowered.com/categories/homepageimage/category/story_rich?cc=us&l=english",
+  },
+  {
+    id: "fedcba98-7654-3210-fedc-ba9876543210",
+    name: "Simulation",
+    thumb: "https://store.steampowered.com/categories/homepageimage/category/simulation?cc=us&l=english",
+  },
+  {
+    id: "ba987654-3210-fedc-ba98-76543210fedc",
+    name: "Fighting",
+    thumb: "https://store.steampowered.com/categories/homepageimage/category/fighting_martial_arts?cc=us&l=english",
+  },
+  {
+    id: "76543210-fedc-ba98-7654-3210fedcba98",
+    name: "Survival",
+    thumb: "https://store.steampowered.com/categories/homepageimage/category/survival?cc=us&l=english",
+  },
+  {
+    id: "543210fe-dcba-9876-5432-10fedcba9876",
+    name: "Casual",
+    thumb: "https://store.steampowered.com/categories/homepageimage/category/casual?cc=us&l=english",
+  },
+  {
+    id: "dcba9876-5432-10fe-dcba-9876543210fe",
+    name: "Adventure",
+    thumb: "https://store.steampowered.com/categories/homepageimage/category/adventure?cc=us&l=english",
+  },
+  {
+    id: "10fedcba-9876-5432-10fe-dcba98765432",
+    name: "Open World",
+    thumb: "https://store.steampowered.com/categories/homepageimage/category/exploration_open_world?cc=us&l=english",
+  },
+];

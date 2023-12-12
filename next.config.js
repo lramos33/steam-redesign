@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["picsum.photos", "cdn.cloudflare.steamstatic.com"],
+    domains: ["picsum.photos", "cdn.cloudflare.steamstatic.com", "store.steampowered.com"],
   },
 };
 
