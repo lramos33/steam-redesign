@@ -18,7 +18,7 @@ export function SpecialOfferSlider() {
       modules={[Pagination, Autoplay, Navigation]}
       className="mySwiper relative max-w-[calc(100vw_-_1rem)] pb-12 2xl:max-w-8xl"
       autoplay={{
-        delay: 60000,
+        delay: 6000,
       }}
       navigation={{
         enabled: true,
@@ -32,7 +32,7 @@ export function SpecialOfferSlider() {
       <SwiperSlide className="flex items-center justify-center rounded px-12">
         <div className="flex h-full w-full gap-4 rounded">
           {STORE_HOME_SPECIAL_OFFERS_MOCK.slice(0, 3).map(game => (
-            <div key={game.id} className="flex flex-1 flex-col gap-4 bg-background-main p-4">
+            <div key={game.id} className="flex flex-1 flex-col gap-4 rounded bg-background-main p-4">
               <Image src={game.thumb} width={460} height={215} alt="game image" className="h-48 flex-1 rounded object-cover" />
 
               <h2 className="text-xl font-bold">{game.name}</h2>
@@ -55,7 +55,7 @@ export function SpecialOfferSlider() {
       <SwiperSlide className="flex items-center justify-center rounded px-12">
         <div className="flex h-full w-full gap-4 rounded">
           {STORE_HOME_SPECIAL_OFFERS_MOCK.slice(3, 6).map(game => (
-            <div key={game.id} className="flex flex-1 flex-col gap-4 bg-background-main p-4">
+            <div key={game.id} className="flex flex-1 flex-col gap-4 rounded bg-background-main p-4">
               <Image src={game.thumb} width={460} height={215} alt="game image" className="h-48 flex-1 rounded object-cover" />
 
               <h2 className="text-xl font-bold">{game.name}</h2>
@@ -78,7 +78,7 @@ export function SpecialOfferSlider() {
       <SwiperSlide className="flex items-center justify-center rounded px-12">
         <div className="flex h-full w-full gap-4 rounded">
           {STORE_HOME_SPECIAL_OFFERS_MOCK.slice(6, 9).map(game => (
-            <div key={game.id} className="flex flex-1 flex-col gap-4 bg-background-main p-4">
+            <div key={game.id} className="flex flex-1 flex-col gap-4 rounded bg-background-main p-4">
               <Image src={game.thumb} width={460} height={215} alt="game image" className="h-48 flex-1 rounded object-cover" />
 
               <h2 className="text-xl font-bold">{game.name}</h2>
