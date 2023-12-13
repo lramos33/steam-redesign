@@ -48,7 +48,7 @@ export function FreeToPlaySlider() {
                   <h2 className="text-xl font-bold">{game.name}</h2>
                 </Link>
 
-                <div className="flex justify-between border border-red-500">
+                <div className="flex justify-between">
                   <div className="flex items-center gap-2 text-dim">
                     {game.platforms.includes("windows") && <Icons.FaWindows className="h-6 w-6" />}
                     {game.platforms.includes("macOS") && <Icons.FaApple className="h-6 w-6" />}
