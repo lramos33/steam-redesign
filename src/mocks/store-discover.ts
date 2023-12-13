@@ -36,7 +36,7 @@ export const STORE_DISCOVER_MOCK = [
         "https://cdn.cloudflare.steamstatic.com/steam/apps/1151640/ss_15f5759c441e4e5f51e1a8ee333e4ab9df9aa783.1920x1080.jpg?t=1698159193",
       ],
     },
-    name: "Horizon Zero Dawn™ Complete Edition",
+    name: "Horizon Zero Dawn™",
     recommendation: {
       type: "play",
       game: "The Last of Us™ Part I",
