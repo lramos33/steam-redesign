@@ -21,50 +21,42 @@ export default function Page() {
 
         <div className="space-y-2">
           <h2 className="ml-12 text-lg font-bold">Featured</h2>
-
           <FeaturedSlider />
         </div>
 
         <div className="space-y-2">
           <div className="mx-12 flex items-center justify-between">
             <h2 className="text-lg font-bold">Special Offers</h2>
-
             <Button variant="outline" className="h-8 text-dim">
               See more
             </Button>
           </div>
-
           <SpecialOfferSlider />
         </div>
 
         <div className="space-y-2">
           <div className="mx-12 flex items-center justify-between">
             <h2 className="text-lg font-bold">Browse Steam</h2>
-
             <Button variant="outline" className="h-8 text-dim">
               See more
             </Button>
           </div>
-
           <BrowseCategorySlider />
         </div>
 
         <div className="space-y-2">
           <div className="mx-12 flex items-center justify-between">
             <h2 className="text-lg font-bold">Free to play games</h2>
-
             <Button variant="outline" className="h-8 text-dim">
               See more
             </Button>
           </div>
-
           <FreeToPlaySlider />
         </div>
 
         <div className="max-w-[calc(100vw_-_1rem)] space-y-2 2xl:max-w-8xl">
           <div className="mx-12 flex items-center justify-between">
             <h2 className="text-lg font-bold">Recently Updated</h2>
-
             <Button variant="outline" className="h-8 text-dim">
               See more
             </Button>
@@ -97,12 +89,10 @@ export default function Page() {
         <div className="max-w-[calc(100vw_-_1rem)] space-y-2 2xl:max-w-8xl">
           <div className="mx-12 flex items-center justify-between">
             <h2 className="text-lg font-bold">New & Trending</h2>
-
             <Button variant="outline" className="h-8 text-dim">
               See more
             </Button>
           </div>
-
           <NewAndTrendingSlider />
         </div>
       </div>
