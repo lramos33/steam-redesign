@@ -359,3 +359,33 @@ export const STORE_HOME_FREE_TO_PLAY_MOCK = [
     platforms: ["windows"],
   },
 ];
+
+export const STORE_HOME_RECENTLY_UPDATED_MOCK = [
+  {
+    id: "71eb32df-d033-4d7b-8921-fecb24810470",
+    name: "PAYDAY 3",
+    description:
+      "PAYDAY 3 is the much anticipated sequel to one of the most popular co-op shooters ever. Since its release, PAYDAY-players have been reveling in the thrill of a perfectly planned and executed heist. That's what makes PAYDAY a high-octane, co-op FPS experience without equal.",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/1272080/header_alt_assets_3.jpg?t=1702398148",
+  },
+  {
+    id: "d03d81cf-0939-419e-9546-c5d089ff3e3a",
+    name: "Lethal Company",
+    description: "A co-op horror about scavenging at abandoned moons to sell scrap to the Company.",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/1966720/header.jpg?t=1700231592",
+  },
+  {
+    id: "1ca68c94-7ada-4311-8dee-162521c5dcde",
+    name: "Lies of P",
+    description:
+      "Lies of P is a thrilling soulslike that takes the story of Pinocchio, turns it on its head, and sets it against the darkly elegant backdrop of the Belle Epoque era.",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/1627720/header.jpg?t=1701760966",
+  },
+  {
+    id: "f89173c2-0d80-42a0-ab5b-1bed8d41f74e",
+    name: "Starfield",
+    description:
+      "Starfield is the first new universe in 25 years from Bethesda Game Studios, the award-winning creators of The Elder Scrolls V: Skyrim and Fallout 4.",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/1716740/header.jpg?t=1700075960",
+  },
+];
