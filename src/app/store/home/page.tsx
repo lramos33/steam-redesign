@@ -6,6 +6,7 @@ import HomeGif from "../../../../public/home.gif";
 import { Button } from "@/components/primitives/Button";
 
 import { FeaturedSlider } from "@/components/sliders/FeaturedSlider";
+import { TopSellersSlide } from "@/components/sliders/TopSellersSlide";
 import { FreeToPlaySlider } from "@/components/sliders/FreeToPlaySlider";
 import { SpecialOfferSlider } from "@/components/sliders/SpecialOffersSlider";
 import { BrowseCategorySlider } from "@/components/sliders/BrowseCategorySlider";
@@ -94,6 +95,16 @@ export default function Page() {
             </Button>
           </div>
           <NewAndTrendingSlider />
+        </div>
+
+        <div className="max-w-[calc(100vw_-_1rem)] space-y-2 2xl:max-w-8xl">
+          <div className="mx-12 flex items-center justify-between">
+            <h2 className="text-lg font-bold">Top Sellers</h2>
+            <Button variant="outline" className="h-8 text-dim">
+              See more
+            </Button>
+          </div>
+          <TopSellersSlide />
         </div>
       </div>
     </div>
