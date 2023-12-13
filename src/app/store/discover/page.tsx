@@ -16,7 +16,7 @@ import { STORE_DISCOVER_MOCK } from "@/mocks/store-discover";
 
 export default function Page() {
   return (
-    <div className="flex flex-1 flex-col items-center bg-[#00030d]">
+    <div className="flex flex-1 flex-col items-center bg-gradient-to-b from-[#00030d] to-gray-950 to-50%">
       <div className="mb-32 mt-16 flex w-full max-w-8xl flex-1 flex-col gap-16">
         <div className="space-y-2">
           <h1 className="text-3xl font-bold">Lramos33 Discovery Feed</h1>
@@ -31,17 +31,24 @@ export default function Page() {
                 height={215}
                 width={460}
                 alt="game image"
-                className="h-[292px] w-[624px] rounded object-cover"
+                className="h-[272px] w-[582px] rounded object-cover"
               />
 
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col justify-between">
                 {game.thumbs.secondary.map(thumb => (
-                  <Image key={thumb} src={thumb} width={256} height={144} alt="game image" className="h-[92px] w-44 rounded object-cover" />
+                  <Image
+                    key={thumb}
+                    src={thumb}
+                    width={256}
+                    height={144}
+                    alt="game image"
+                    className="h-[84px] w-[150px] rounded object-cover"
+                  />
                 ))}
               </div>
 
-              <div className="ml-2 flex h-72 flex-1 flex-col justify-between">
-                <div className="relative flex flex-col gap-6">
+              <div className="relative ml-2 flex h-[272px] flex-1 flex-col justify-between">
+                <div className="flex flex-col gap-4">
                   <div className="space-y-2">
                     <h4 className="text-2xl font-bold">{game.name}</h4>
                     <p className="text-dim">
@@ -67,11 +74,6 @@ export default function Page() {
                   </div>
 
                   <ReviewRatio approvalPercentage={game.approvalPercentage} numOfReviews={game.numOfReviews} />
-
-                  <div className="absolute right-0 flex gap-2">
-                    <Button variant="outline">Ignore</Button>
-                    <WishlistButton format="icon" />
-                  </div>
                 </div>
 
                 <div className="flex justify-between">
@@ -91,6 +93,11 @@ export default function Page() {
 
                     <Button>Visit Page</Button>
                   </div>
+                </div>
+
+                <div className="absolute right-0 flex gap-2">
+                  <Button variant="outline">Ignore</Button>
+                  <WishlistButton format="icon" />
                 </div>
               </div>
             </div>
