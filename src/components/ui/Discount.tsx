@@ -2,7 +2,7 @@ import { formatMonthAndDay } from "@/helpers/date.helper";
 import { formatCurrency } from "@/helpers/currency.helper";
 
 interface DiscountProps {
-  endsAt: string;
+  endsAt?: string;
   fullPrice: number;
   percentage: number;
   discountedPrice: number;
@@ -11,7 +11,7 @@ interface DiscountProps {
 export function Discount({ discountedPrice, fullPrice, endsAt, percentage }: DiscountProps) {
   return (
     <div className="flex items-end gap-2">
-      <p className="text-xs text-dim">Until {formatMonthAndDay(endsAt)}</p>
+      {endsAt && <p className="text-xs text-dim">Until {formatMonthAndDay(endsAt)}</p>}
 
       <p className="flex h-11 items-center justify-center rounded bg-color-accent-green px-3 text-lg font-bold text-dark">-{percentage}%</p>
 
