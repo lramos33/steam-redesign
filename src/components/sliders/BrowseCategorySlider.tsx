@@ -6,7 +6,7 @@ import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
 import { Link } from "@/lib/next";
 
-import { Icons } from "./Icons";
+import { Icons } from "../others/Icons";
 import { Button } from "../primitives/Button";
 
 import { cn } from "@/helpers/tailwind.helper";
