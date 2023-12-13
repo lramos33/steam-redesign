@@ -4,10 +4,10 @@ import HomeGif from "../../../../public/home.gif";
 
 import { Button } from "@/components/primitives/Button";
 
-import { FeaturedSlider } from "@/components/others/FeaturedSlider";
-import { SpecialOfferSlider } from "@/components/others/SpecialOffersSlider";
-import { BrowseCategorySlider } from "@/components/others/BrowseCategorySlider";
-import { FreeToPlaySlider } from "@/components/others/FreeToPlaySlider";
+import { FeaturedSlider } from "@/components/sliders/FeaturedSlider";
+import { FreeToPlaySlider } from "@/components/sliders/FreeToPlaySlider";
+import { SpecialOfferSlider } from "@/components/sliders/SpecialOffersSlider";
+import { BrowseCategorySlider } from "@/components/sliders/BrowseCategorySlider";
 
 export default function Page() {
   return (
@@ -51,6 +51,18 @@ export default function Page() {
           <div className="mx-12 flex items-center justify-between">
             <h2 id="free-to-play" className="text-lg">
               Free to play games
+            </h2>
+
+            <Button variant="link">See more</Button>
+          </div>
+
+          <FreeToPlaySlider />
+        </div>
+
+        <div className="space-y-2">
+          <div className="mx-12 flex items-center justify-between">
+            <h2 id="free-to-play" className="text-lg">
+              Recently Updated
             </h2>
 
             <Button variant="link">See more</Button>

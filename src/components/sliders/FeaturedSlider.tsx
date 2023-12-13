@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
-import { Icons } from "./Icons";
+import { Icons } from "../others/Icons";
 import { Badge } from "../ui/Badge";
 import { Discount } from "../ui/Discount";
 import { Button } from "../primitives/Button";

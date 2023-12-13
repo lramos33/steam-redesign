@@ -6,7 +6,7 @@ import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
 import { Link } from "@/lib/next";
 
-import { Icons } from "./Icons";
+import { Icons } from "../others/Icons";
 import { Button } from "../primitives/Button";
 
 import { STORE_HOME_FREE_TO_PLAY_MOCK } from "@/mocks/store-home";
