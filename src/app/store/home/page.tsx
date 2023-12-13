@@ -9,6 +9,7 @@ import { FeaturedSlider } from "@/components/sliders/FeaturedSlider";
 import { FreeToPlaySlider } from "@/components/sliders/FreeToPlaySlider";
 import { SpecialOfferSlider } from "@/components/sliders/SpecialOffersSlider";
 import { BrowseCategorySlider } from "@/components/sliders/BrowseCategorySlider";
+import { NewAndTrendingSlider } from "@/components/sliders/NewAndTrendingSlider";
 
 import { STORE_HOME_RECENTLY_UPDATED_MOCK } from "@/mocks/store-home";
 
@@ -19,18 +20,14 @@ export default function Page() {
         <Image src={HomeGif} alt="home" width={1440} className="h-[468px] object-cover" />
 
         <div className="space-y-2">
-          <h2 id="featured" className="ml-12 text-lg">
-            Featured
-          </h2>
+          <h2 className="ml-12 text-lg font-bold">Featured</h2>
 
           <FeaturedSlider />
         </div>
 
         <div className="space-y-2">
           <div className="mx-12 flex items-center justify-between">
-            <h2 id="special" className="text-lg">
-              Special Offers
-            </h2>
+            <h2 className="text-lg font-bold">Special Offers</h2>
 
             <Button variant="outline" className="h-8 text-dim">
               See more
@@ -42,9 +39,7 @@ export default function Page() {
 
         <div className="space-y-2">
           <div className="mx-12 flex items-center justify-between">
-            <h2 id="browse" className="text-lg">
-              Browse Steam
-            </h2>
+            <h2 className="text-lg font-bold">Browse Steam</h2>
 
             <Button variant="outline" className="h-8 text-dim">
               See more
@@ -56,9 +51,7 @@ export default function Page() {
 
         <div className="space-y-2">
           <div className="mx-12 flex items-center justify-between">
-            <h2 id="free-to-play" className="text-lg">
-              Free to play games
-            </h2>
+            <h2 className="text-lg font-bold">Free to play games</h2>
 
             <Button variant="outline" className="h-8 text-dim">
               See more
@@ -70,16 +63,14 @@ export default function Page() {
 
         <div className="max-w-[calc(100vw_-_1rem)] space-y-2 2xl:max-w-8xl">
           <div className="mx-12 flex items-center justify-between">
-            <h2 id="free-to-play" className="text-lg">
-              Recently Updated
-            </h2>
+            <h2 className="text-lg font-bold">Recently Updated</h2>
 
             <Button variant="outline" className="h-8 text-dim">
               See more
             </Button>
           </div>
 
-          <div className="flex items-center gap-4 rounded  px-12">
+          <div className="flex items-center gap-4 rounded px-12">
             {STORE_HOME_RECENTLY_UPDATED_MOCK.map(game => (
               <div key={game.id} className="flex flex-1 flex-col gap-4 rounded bg-background-main p-4">
                 <Link className="h-36 overflow-hidden" href="#">
@@ -101,6 +92,18 @@ export default function Page() {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="max-w-[calc(100vw_-_1rem)] space-y-2 2xl:max-w-8xl">
+          <div className="mx-12 flex items-center justify-between">
+            <h2 className="text-lg font-bold">New & Trending</h2>
+
+            <Button variant="outline" className="h-8 text-dim">
+              See more
+            </Button>
+          </div>
+
+          <NewAndTrendingSlider />
         </div>
       </div>
     </div>

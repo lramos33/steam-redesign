@@ -326,7 +326,6 @@ export const STORE_HOME_FREE_TO_PLAY_MOCK = [
     thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/2073850/header.jpg?t=1702013692",
     platforms: ["windows"],
   },
-
   {
     id: "5efe7303-958f-46af-b5fd-03328836498f",
     name: "Destiny 2",
@@ -387,5 +386,73 @@ export const STORE_HOME_RECENTLY_UPDATED_MOCK = [
     description:
       "Starfield is the first new universe in 25 years from Bethesda Game Studios, the award-winning creators of The Elder Scrolls V: Skyrim and Fallout 4.",
     thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/1716740/header.jpg?t=1700075960",
+  },
+];
+
+export const STORE_HOME_NEW_AND_TRENDING_MOCK = [
+  {
+    id: "db6275b5-14c3-4364-a7bf-5cded02a32d3",
+    name: "Dungeons of Sundaria",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/587520/header.jpg?t=1702402106",
+    price: 999,
+    platforms: ["windows"],
+  },
+  {
+    id: "f3245c49-d513-4d36-9bc9-8aa5da3c7ff4",
+    name: "Taora : Beginning",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/2594640/header.jpg?t=1702337332",
+    price: 0,
+    platforms: ["windows"],
+  },
+  {
+    id: "aa9c5620-654d-489e-8909-82d7f4ee31a1",
+    name: "Against the Storm",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/1336490/header.jpg?t=1702218649",
+    price: 1499,
+    platforms: ["windows"],
+  },
+  {
+    id: "512f8afd-d09d-4c47-836c-f121c01b6a8b",
+    name: "Arizona Sunshine® 2",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/1540210/header.jpg?t=1701985511",
+    price: 3499,
+    platforms: ["windows"],
+  },
+  {
+    id: "5efe7303-958f-46af-b5fd-03328836498f",
+    name: "Warhammer 40,000: Rogue Trader",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/2186680/header.jpg?t=1702000678",
+    price: 4999,
+    platforms: ["windows", "macOS"],
+  },
+  {
+    id: "06dcfef6-dbb4-43fc-9976-7d727b6e99b4",
+    name: "A Date with Death",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/2415010/header.jpg?t=1701962059",
+    price: 0,
+    platforms: ["windows", "macOS", "linux"],
+  },
+
+  {
+    id: "f29614c8-8733-4ce5-a22e-8d2a24048bd2",
+    name: "A Highland Song",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/1240060/header.jpg?t=1701791974",
+    price: 999,
+    platforms: ["windows", "macOS"],
+  },
+
+  {
+    id: "fc27d6df-ca77-4444-9ca2-5aa509e58a09",
+    name: "Blood West",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/1587130/header_alt_assets_1.jpg?t=1702449188",
+    price: 999,
+    platforms: ["windows"],
+  },
+  {
+    id: "8244ba52-9059-4ae8-b683-ef0928642bdd",
+    name: "Disney Dreamlight Valley",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/1401590/header.jpg?t=1701785134",
+    price: 2999,
+    platforms: ["windows"],
   },
 ];
