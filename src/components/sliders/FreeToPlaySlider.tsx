@@ -34,7 +34,7 @@ export function FreeToPlaySlider() {
           <div className="flex h-full w-full gap-4 rounded">
             {STORE_HOME_FREE_TO_PLAY_MOCK.slice(page * 3, (page + 1) * 3).map(game => (
               <div key={game.id} className="flex flex-1 flex-col gap-4 rounded bg-background-main p-4">
-                <Link className="h-48 overflow-hidden" href="#special">
+                <Link className="h-48 overflow-hidden" href="#">
                   <Image
                     src={game.thumb}
                     width={460}
@@ -44,7 +44,7 @@ export function FreeToPlaySlider() {
                   />
                 </Link>
 
-                <Link href="#special">
+                <Link href="#">
                   <h2 className="text-xl font-bold">{game.name}</h2>
                 </Link>
 

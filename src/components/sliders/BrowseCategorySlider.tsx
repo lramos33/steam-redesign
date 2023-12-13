@@ -45,7 +45,7 @@ export function BrowseCategorySlider() {
         <SwiperSlide key={page} className="flex items-center justify-center rounded px-12">
           <div className="flex h-full w-full gap-4">
             {STORE_HOME_BROWSE_BY_CATEGORY_MOCK.slice(page * 5, (page + 1) * 5).map((category, index) => (
-              <Link href="#browse" key={category.id} className="relative flex flex-1">
+              <Link href="#" key={category.id} className="relative flex flex-1">
                 <div className="h-64 w-64 overflow-hidden">
                   <Image
                     src={category.thumb}
