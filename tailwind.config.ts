@@ -37,6 +37,7 @@ const config: Config = {
       textColor: {
         main: "var(--text-main)",
         dim: "var(--text-dim)",
+        dark: "var(--text-dark)",
       },
 
       borderColor: {

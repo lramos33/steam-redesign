@@ -7,6 +7,7 @@ import { Button } from "@/components/primitives/Button";
 import { FeaturedSlider } from "@/components/others/FeaturedSlider";
 import { SpecialOfferSlider } from "@/components/others/SpecialOffersSlider";
 import { BrowseCategorySlider } from "@/components/others/BrowseCategorySlider";
+import { FreeToPlaySlider } from "@/components/others/FreeToPlaySlider";
 
 export default function Page() {
   return (
@@ -44,6 +45,18 @@ export default function Page() {
           </div>
 
           <BrowseCategorySlider />
+        </div>
+
+        <div className="space-y-2">
+          <div className="mx-12 flex items-center justify-between">
+            <h2 id="free-to-play" className="text-lg">
+              Free to play games
+            </h2>
+
+            <Button variant="link">See more</Button>
+          </div>
+
+          <FreeToPlaySlider />
         </div>
       </div>
     </div>

@@ -198,7 +198,7 @@ export const STORE_HOME_SPECIAL_OFFERS_MOCK = [
   },
 ];
 
-export const STORE_HOME_BROWSE_BY_CATEGORY = [
+export const STORE_HOME_BROWSE_BY_CATEGORY_MOCK = [
   {
     id: "68c58950-3352-4686-9c53-fc6fedaa4d61",
     name: "Puzzle",
@@ -298,5 +298,64 @@ export const STORE_HOME_BROWSE_BY_CATEGORY = [
     id: "10fedcba-9876-5432-10fe-dcba98765432",
     name: "Open World",
     thumb: "/categories/open_world.png",
+  },
+];
+
+export const STORE_HOME_FREE_TO_PLAY_MOCK = [
+  {
+    id: "db6275b5-14c3-4364-a7bf-5cded02a32d3",
+    name: "Counter-Strike 2",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg?t=1698860631",
+    platforms: ["windows", "linux"],
+  },
+  {
+    id: "f3245c49-d513-4d36-9bc9-8aa5da3c7ff4",
+    name: "PUBG: BATTLEGROUNDS",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/578080/header.jpg?t=1701911655",
+    platforms: ["windows"],
+  },
+  {
+    id: "aa9c5620-654d-489e-8909-82d7f4ee31a1",
+    name: "Dota 2",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/570/header.jpg?t=1701826869",
+    platforms: ["windows", "macOS", "linux"],
+  },
+  {
+    id: "512f8afd-d09d-4c47-836c-f121c01b6a8b",
+    name: "THE FINALS",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/2073850/header.jpg?t=1702013692",
+    platforms: ["windows"],
+  },
+
+  {
+    id: "5efe7303-958f-46af-b5fd-03328836498f",
+    name: "Destiny 2",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/1085660/header.jpg?t=1701200506",
+    platforms: ["windows"],
+  },
+  {
+    id: "06dcfef6-dbb4-43fc-9976-7d727b6e99b4",
+    name: "Apex Legends™",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/header.jpg?t=1700150367",
+    platforms: ["windows"],
+  },
+  {
+    id: "f29614c8-8733-4ce5-a22e-8d2a24048bd2",
+    name: "Team Fortress 2",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/440/header.jpg?t=1695767057",
+    platforms: ["windows", "macOS", "linux"],
+  },
+
+  {
+    id: "fc27d6df-ca77-4444-9ca2-5aa509e58a09",
+    name: "The Sims™ 4",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/1222670/header.jpg?t=1701972583",
+    platforms: ["windows"],
+  },
+  {
+    id: "8244ba52-9059-4ae8-b683-ef0928642bdd",
+    name: "World of Warships",
+    thumb: "https://cdn.cloudflare.steamstatic.com/steam/apps/552990/header.jpg?t=1702381717",
+    platforms: ["windows"],
   },
 ];
