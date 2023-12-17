@@ -6,9 +6,11 @@ import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import { Image } from "@/lib/next";
 
 import { Icons } from "../../../../components/others/Icons";
+
+import { Button } from "../../../../components/primitives/Button";
+
 import { Badge } from "../../../../components/ui/Badge";
 import { Discount } from "../../../../components/ui/Discount";
-import { Button } from "../../../../components/primitives/Button";
 import { WishlistButton } from "../../../../components/ui/WishlistButton";
 
 import { formatCurrency } from "@/helpers/currency.helper";

@@ -6,8 +6,10 @@ import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import { Link, Image } from "@/lib/next";
 
 import { Icons } from "../../../../components/others/Icons";
-import { Discount } from "../../../../components/ui/Discount";
+
 import { Button } from "../../../../components/primitives/Button";
+
+import { Discount } from "../../../../components/ui/Discount";
 import { WishlistButton } from "../../../../components/ui/WishlistButton";
 
 import { STORE_HOME_SPECIAL_OFFERS_MOCK } from "@/mocks/store-home";
