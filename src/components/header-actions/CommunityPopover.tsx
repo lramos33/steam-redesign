@@ -61,7 +61,7 @@ export function CommunityPopover() {
           </Tabs.List>
 
           <Tabs.Content value="friends">
-            <ScrollArea className="">
+            <ScrollArea>
               <div className="max-h-96 space-y-8 pr-2">
                 <div className="flex flex-col gap-4">
                   <p className="text-sm text-dim">Online (4)</p>

@@ -11,10 +11,13 @@ import {
   LuGamepad2,
   LuBell,
   LuUsers,
+  LuCheck,
   LuBadgeDollarSign,
   LuChevronDown,
+  LuLogOut,
   LuUserPlus,
   LuChevronUp,
+  LuCircle,
 } from "react-icons/lu";
 import { FaXTwitter, FaFacebookF, FaSteam, FaWindows, FaApple } from "react-icons/fa6";
 
@@ -28,6 +31,9 @@ export const Icons = {
   LuUsers,
   LuGamepad2,
   LuMailCheck,
+  LuLogOut,
+  LuCircle,
+  LuCheck,
   LuChevronRight,
   LuBadgeDollarSign,
   LuUserPlus,
