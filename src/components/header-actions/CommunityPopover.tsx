@@ -1,14 +1,16 @@
 import { Icons } from "../others/Icons";
+
+import { Separator } from "../ui/Separator";
+
 import { Tabs } from "../primitives/Tabs";
 import { Avatar } from "../primitives/Avatar";
 import { Button } from "../primitives/Button";
 import { Popover } from "../primitives/Popover";
+import { ScrollArea } from "../primitives/ScrollArea";
 
 import { formatLastOnline } from "@/helpers/date.helper";
 
 import { FRIENDS_MOCK } from "@/mocks/friends";
-import { Separator } from "../ui/Separator";
-import { ScrollArea } from "../primitives/ScrollArea";
 
 export function CommunityPopover() {
   return (

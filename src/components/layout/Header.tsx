@@ -6,9 +6,9 @@ import { Toggle } from "../primitives/Toggle";
 import { SteamLogo } from "../vectors/SteamLogo";
 
 import { ProfileMenu } from "../header-actions/ProfileMenu";
+import { LanguageMenu } from "../header-actions/LanguageMenu";
 import { CommunityPopover } from "../header-actions/CommunityPopover";
 import { NotificationsPopover } from "../header-actions/NotificationsPopover";
-import { LanguageMenu } from "../header-actions/LanguageMenu";
 
 export function Header() {
   const pathname = usePathname();

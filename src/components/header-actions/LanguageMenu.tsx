@@ -2,8 +2,8 @@
 
 import { Icons } from "../others/Icons";
 
-import { DropdownMenu } from "../primitives/DropdownMenu";
 import { ScrollArea } from "../primitives/ScrollArea";
+import { DropdownMenu } from "../primitives/DropdownMenu";
 
 export function LanguageMenu() {
   return (
