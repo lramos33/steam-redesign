@@ -10,21 +10,18 @@ import { cn } from "@/helpers/tailwind.helper";
 const buttonVariants = cva("rounded flex items-center justify-center h-11", {
   variants: {
     format: {
-      icon: "w-11 text-2xl",
+      icon: "w-11",
       default: "px-6 gap-2",
     },
     variant: {
       unstyled: "px-0 rounded-none h-fit w-fit",
-      secondary: "bg-color-secondary hover:bg-white hover:bg-color-primary hover:text-dark",
       link: "px-0 w-fit h-fit hover:underline rounded-none",
-      green: "bg-color-accent-green text-dark font-bold hover:opacity-90",
+      primary: "bg-background-highlight hover:bg-background-hover",
       outline: "border border-background-highlight hover:border-background-hover",
-      highlight: "bg-background-highlight hover:bg-background-hover",
-      ghost: "hover:bg-background-hover",
     },
   },
   defaultVariants: {
-    variant: "highlight",
+    variant: "primary",
     format: "default",
   },
 });
