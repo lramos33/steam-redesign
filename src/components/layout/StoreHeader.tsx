@@ -3,8 +3,9 @@
 import { Link, usePathname } from "@/lib/next";
 
 import { Icons } from "../others/Icons";
-import { Toggle } from "../primitives/Toggle";
+
 import { Input } from "../primitives/Input";
+import { Toggle } from "../primitives/Toggle";
 
 export function StoreHeader() {
   const pathname = usePathname();
