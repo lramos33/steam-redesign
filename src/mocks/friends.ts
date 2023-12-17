@@ -1,7 +1,7 @@
-import { IFriends } from "@/types";
+import { IFriend } from "@/types";
 import { getRandomTimestamp } from "@/helpers/date.helper";
 
-export const FRIENDS_MOCK: IFriends[] = [
+export const FRIENDS_MOCK: IFriend[] = [
   {
     id: "e6f2aa8b-527b-43e4-a291-5fedee56a7d0",
     username: "TacoNinja42",
