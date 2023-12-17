@@ -1,8 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
+
+import { Image } from "@/lib/next";
 
 import { Icons } from "../others/Icons";
 import { Badge } from "../ui/Badge";
