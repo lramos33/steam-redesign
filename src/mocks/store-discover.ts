@@ -1,4 +1,6 @@
-export const STORE_DISCOVER_MOCK = [
+import { IDiscoveryFeedGame } from "@/features/store/discover/types";
+
+export const STORE_DISCOVER_MOCK: IDiscoveryFeedGame[] = [
   {
     id: "ab798afd-ef3b-4f88-8361-9390139c7a14",
     thumbs: {
