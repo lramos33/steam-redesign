@@ -5,8 +5,8 @@ import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
 import { Link, Image } from "@/lib/next";
 
-import { Icons } from "../others/Icons";
-import { Button } from "../primitives/Button";
+import { Icons } from "../../../../components/others/Icons";
+import { Button } from "../../../../components/primitives/Button";
 
 import { cn } from "@/helpers/tailwind.helper";
 

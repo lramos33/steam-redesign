@@ -2,15 +2,18 @@
 
 import { Link, usePathname } from "@/lib/next";
 
+import { Icons } from "../others/Icons";
 import { Toggle } from "../primitives/Toggle";
-
 import { SteamLogo } from "../vectors/SteamLogo";
+import { ProfilePopover } from "../header-actions/ProfilePopover";
+import { CommunityPopover } from "../header-actions/CommunityPopover";
+import { NotificationsPopover } from "../header-actions/NotificationsPopover";
 
 export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="flex items-center bg-background-main px-3 py-4.5">
+    <header className="flex items-center justify-between bg-background-main px-3 py-2">
       <div className="flex items-center gap-8">
         <SteamLogo height="24" fill="#f3f3f3" />
 
@@ -33,7 +36,23 @@ export function Header() {
         </Toggle>
       </div>
 
-      <div></div>
+      <div className="flex items-center gap-12">
+        <div className="flex gap-3">
+          <CommunityPopover />
+          <NotificationsPopover />
+          <ProfilePopover />
+        </div>
+
+        <div className="flex gap-4">
+          <Link href="" className="text-sm text-dim">
+            Help
+          </Link>
+
+          <Link href="" className="flex items-center gap-1 text-sm text-dim">
+            Language <Icons.LuChevronDown />
+          </Link>
+        </div>
+      </div>
     </header>
   );
 }

@@ -4,12 +4,12 @@ import HomeGif from "../../../../public/home.gif";
 
 import { Button } from "@/components/primitives/Button";
 
-import { FeaturedSlider } from "@/components/sliders/FeaturedSlider";
-import { TopSellersSlide } from "@/components/sliders/TopSellersSlide";
-import { FreeToPlaySlider } from "@/components/sliders/FreeToPlaySlider";
-import { SpecialOfferSlider } from "@/components/sliders/SpecialOffersSlider";
-import { BrowseCategorySlider } from "@/components/sliders/BrowseCategorySlider";
-import { NewAndTrendingSlider } from "@/components/sliders/NewAndTrendingSlider";
+import { FeaturedSlider } from "@/features/store/home/components/FeaturedSlider";
+import { TopSellersSlide } from "@/features/store/home/components/TopSellersSlide";
+import { FreeToPlaySlider } from "@/features/store/home/components/FreeToPlaySlider";
+import { SpecialOfferSlider } from "@/features/store/home/components/SpecialOffersSlider";
+import { BrowseCategorySlider } from "@/features/store/home/components/BrowseCategorySlider";
+import { NewAndTrendingSlider } from "@/features/store/home/components/NewAndTrendingSlider";
 
 import { STORE_HOME_RECENTLY_UPDATED_MOCK } from "@/mocks/store-home";
 

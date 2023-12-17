@@ -5,14 +5,12 @@ import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
 import { Link, Image } from "@/lib/next";
 
-import { Icons } from "../others/Icons";
-import { Discount } from "../ui/Discount";
-import { Button } from "../primitives/Button";
-import { WishlistButton } from "../ui/WishlistButton";
+import { Icons } from "../../../../components/others/Icons";
+import { Button } from "../../../../components/primitives/Button";
 
-import { STORE_HOME_SPECIAL_OFFERS_MOCK } from "@/mocks/store-home";
+import { STORE_HOME_FREE_TO_PLAY_MOCK } from "@/mocks/store-home";
 
-export function SpecialOfferSlider() {
+export function FreeToPlaySlider() {
   return (
     <Swiper
       loop
@@ -33,7 +31,7 @@ export function SpecialOfferSlider() {
       {[0, 1, 2].map(page => (
         <SwiperSlide key={page} className="flex items-center justify-center rounded px-12">
           <div className="flex h-full w-full gap-4 rounded">
-            {STORE_HOME_SPECIAL_OFFERS_MOCK.slice(page * 3, (page + 1) * 3).map(game => (
+            {STORE_HOME_FREE_TO_PLAY_MOCK.slice(page * 3, (page + 1) * 3).map(game => (
               <div key={game.id} className="flex flex-1 flex-col gap-4 rounded bg-background-main p-4">
                 <Link className="h-48 overflow-hidden" href="#">
                   <Image
@@ -49,15 +47,17 @@ export function SpecialOfferSlider() {
                   <h2 className="text-xl font-bold">{game.name}</h2>
                 </Link>
 
-                <div className="flex gap-2 self-end">
-                  <Discount
-                    fullPrice={game.price}
-                    endsAt={game.discount.endsAt}
-                    percentage={game.discount.percentage}
-                    discountedPrice={game.discount.discountedPrice}
-                  />
+                <div className="flex justify-between">
+                  <div className="flex items-center gap-2 text-dim">
+                    {game.platforms.includes("windows") && <Icons.FaWindows className="h-6 w-6" />}
+                    {game.platforms.includes("macOS") && <Icons.FaApple className="h-6 w-6" />}
+                    {game.platforms.includes("linux") && <Icons.FaSteam className="h-6 w-6" />}
+                  </div>
 
-                  <WishlistButton format="icon" />
+                  <div className="flex items-center gap-4">
+                    <p className="font-bold text-dim">Free</p>
+                    <Button variant="green">Play Now</Button>
+                  </div>
                 </div>
               </div>
             ))}
