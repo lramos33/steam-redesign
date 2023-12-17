@@ -4,6 +4,7 @@ import { Link, usePathname } from "@/lib/next";
 
 import { Icons } from "../others/Icons";
 import { Toggle } from "../primitives/Toggle";
+import { Input } from "../primitives/Input";
 
 export function StoreHeader() {
   const pathname = usePathname();
@@ -44,7 +45,20 @@ export function StoreHeader() {
         </Toggle>
       </div>
 
-      <div className="flex gap-1.5">
+      <div className="flex items-center gap-1.5">
+        <Input.Root className="mr-8">
+          <Input.IconContainer>
+            <Input.Main
+              id="search-game"
+              placeholder="Search..."
+              iconPosition="right"
+              className="w-80 border-none bg-[#4b619b20] text-dim placeholder:text-color-secondary"
+            />
+
+            <Input.RightIcon icon={Icons.LuSearch} className="text-color-secondary" />
+          </Input.IconContainer>
+        </Input.Root>
+
         <Toggle
           format="icon"
           variant="secondary"
