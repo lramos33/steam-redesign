@@ -5,10 +5,10 @@ import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
 import { Link, Image } from "@/lib/next";
 
-import { Icons } from "../others/Icons";
-import { Discount } from "../ui/Discount";
-import { Button } from "../primitives/Button";
-import { WishlistButton } from "../ui/WishlistButton";
+import { Icons } from "../../../../components/others/Icons";
+import { Discount } from "../../../../components/ui/Discount";
+import { Button } from "../../../../components/primitives/Button";
+import { WishlistButton } from "../../../../components/ui/WishlistButton";
 
 import { formatCurrency } from "@/helpers/currency.helper";
 
