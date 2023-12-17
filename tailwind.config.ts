@@ -41,6 +41,7 @@ const config: Config = {
       },
 
       borderColor: {
+        dim: "var(--text-dim)",
         "background-main": "var(--bg-main)",
         "background-highlight": "var(--bg-highlight)",
         "background-hover": "var(--bg-hover)",
