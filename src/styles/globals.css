@@ -19,3 +19,10 @@ body {
 ::-webkit-scrollbar-track {
   background-color: #1e1e1e;
 }
+
+:focus-visible {
+  outline-style: solid;
+  outline-color: #4b619b;
+  outline-width: 2px;
+  outline-offset: 1px;
+}
