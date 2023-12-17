@@ -1,6 +1,6 @@
 import { Image } from "@/lib/next";
 
-import { Badge } from "@/components/ui/Badge";
+import { Badge } from "@/components/primitives/Badge";
 import { Discount } from "@/components/ui/Discount";
 import { ReviewRatio } from "@/components/ui/ReviewRatio";
 

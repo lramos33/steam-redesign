@@ -6,7 +6,7 @@ import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import { Image } from "@/lib/next";
 
 import { Icons } from "../others/Icons";
-import { Badge } from "../ui/Badge";
+import { Badge } from "../primitives/Badge";
 import { Discount } from "../ui/Discount";
 import { Button } from "../primitives/Button";
 import { WishlistButton } from "../ui/WishlistButton";
