@@ -12,7 +12,7 @@ const toggleVariants = cva("rounded flex items-center justify-center ", {
   variants: {
     format: {
       icon: "text-lg h-11 w-11",
-      default: "h-11 px-7 gap-2",
+      default: "h-11 px-6 gap-2",
     },
     variant: {
       secondary: "hover:bg-background-hover data-[state=on]:bg-color-secondary",
