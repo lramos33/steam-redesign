@@ -1,5 +1,7 @@
 "use client";
 
+import { NotificationDot } from "../ui/NotificationDot";
+
 import { Icons } from "../others/Icons";
 import { Button } from "../primitives/Button";
 import { Popover } from "../primitives/Popover";
@@ -10,9 +12,7 @@ export function NotificationsPopover() {
       <Popover.Trigger className="relative flex items-center gap-2 rounded bg-background-highlight px-4 hover:bg-background-hover">
         <Icons.LuBell className="h-5 w-5 text-dim" />
 
-        <span className="absolute right-0 top-0 h-4 w-4 -translate-y-1 translate-x-1 rounded-full bg-color-primary text-xs text-black">
-          3
-        </span>
+        <NotificationDot number={3} className="absolute right-0 top-0 -translate-y-1 translate-x-1" />
       </Popover.Trigger>
 
       <Popover.Content align="end" className="max-w-xs">
@@ -38,7 +38,7 @@ export function NotificationsPopover() {
                 <p className="text-xs">Community</p>
               </div>
 
-              <div className="h-3 w-3 rounded-full bg-color-primary" />
+              <NotificationDot className="h-3 w-3" />
             </div>
 
             <p className="text-sm">
@@ -53,7 +53,7 @@ export function NotificationsPopover() {
                 <p className="text-xs">Games</p>
               </div>
 
-              <div className="h-3 w-3 rounded-full bg-color-primary" />
+              <NotificationDot className="h-3 w-3" />
             </div>
 
             <p className="text-sm">
@@ -68,7 +68,7 @@ export function NotificationsPopover() {
                 <p className="text-xs">Special offer</p>
               </div>
 
-              <div className="h-3 w-3 rounded-full bg-color-primary" />
+              <NotificationDot className="h-3 w-3" />
             </div>
 
             <p className="text-sm">
