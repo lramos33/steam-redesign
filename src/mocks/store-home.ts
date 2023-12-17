@@ -1,4 +1,14 @@
-export const STORE_HOME_FEATURED_MOCK = [
+import {
+  IFeatured,
+  IFreeToPlay,
+  IGameCategory,
+  INewAndTrending,
+  IRecentlyUpdated,
+  ISpecialOffer,
+  ITopSellers,
+} from "@/features/store/home/types";
+
+export const STORE_HOME_FEATURED_MOCK: IFeatured[] = [
   {
     id: "5fe3bba0-c6f5-4fb3-a03a-882a452155a1",
     name: "Red Dead Redemption 2",
@@ -25,7 +35,7 @@ export const STORE_HOME_FEATURED_MOCK = [
     id: "f9d48343-7f70-4234-bfb7-d0b0a271e9d0",
     name: "Baldur's Gate 3",
     description:
-      "Baldur’s Gate 3 is a story-rich, party-based RPG set in the universe of Dungeons & Dragons, where your choices shape a tale of fellowship and betrayal, survival and sacrifice, and the lure of absolute power.",
+      "Baldur's Gate 3 is a story-rich, party-based RPG set in the universe of Dungeons & Dragons, where your choices shape a tale of fellowship and betrayal, survival and sacrifice, and the lure of absolute power.",
     thumbs: {
       main: "https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/capsule_616x353.jpg?t=1701769548",
       secondary: [
@@ -96,7 +106,7 @@ export const STORE_HOME_FEATURED_MOCK = [
   },
 ];
 
-export const STORE_HOME_SPECIAL_OFFERS_MOCK = [
+export const STORE_HOME_SPECIAL_OFFERS_MOCK: ISpecialOffer[] = [
   {
     id: "a2955268-1cfa-4893-ae3d-caece60c5238",
     name: "The Last of Us: Part 1",
@@ -198,7 +208,7 @@ export const STORE_HOME_SPECIAL_OFFERS_MOCK = [
   },
 ];
 
-export const STORE_HOME_BROWSE_BY_CATEGORY_MOCK = [
+export const STORE_HOME_BROWSE_BY_CATEGORY_MOCK: IGameCategory[] = [
   {
     id: "68c58950-3352-4686-9c53-fc6fedaa4d61",
     name: "Puzzle",
@@ -301,7 +311,7 @@ export const STORE_HOME_BROWSE_BY_CATEGORY_MOCK = [
   },
 ];
 
-export const STORE_HOME_FREE_TO_PLAY_MOCK = [
+export const STORE_HOME_FREE_TO_PLAY_MOCK: IFreeToPlay[] = [
   {
     id: "db6275b5-14c3-4364-a7bf-5cded02a32d3",
     name: "Counter-Strike 2",
@@ -359,7 +369,7 @@ export const STORE_HOME_FREE_TO_PLAY_MOCK = [
   },
 ];
 
-export const STORE_HOME_RECENTLY_UPDATED_MOCK = [
+export const STORE_HOME_RECENTLY_UPDATED_MOCK: IRecentlyUpdated[] = [
   {
     id: "71eb32df-d033-4d7b-8921-fecb24810470",
     name: "PAYDAY 3",
@@ -389,7 +399,7 @@ export const STORE_HOME_RECENTLY_UPDATED_MOCK = [
   },
 ];
 
-export const STORE_HOME_NEW_AND_TRENDING_MOCK = [
+export const STORE_HOME_NEW_AND_TRENDING_MOCK: INewAndTrending[] = [
   {
     id: "db6275b5-14c3-4364-a7bf-5cded02a32d3",
     name: "Dungeons of Sundaria",
@@ -457,7 +467,7 @@ export const STORE_HOME_NEW_AND_TRENDING_MOCK = [
   },
 ];
 
-export const STORE_HOME_TOP_SELLERS_MOCK = [
+export const STORE_HOME_TOP_SELLERS_MOCK: ITopSellers[] = [
   {
     id: "595c193b-16f4-4de8-a112-124fecae3023",
     name: "Red Dead Redemption 2",

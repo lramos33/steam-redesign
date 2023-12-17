@@ -6,6 +6,7 @@ import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import { Link, Image } from "@/lib/next";
 
 import { Icons } from "../../../../components/others/Icons";
+
 import { Button } from "../../../../components/primitives/Button";
 
 import { formatCurrency } from "@/helpers/currency.helper";
