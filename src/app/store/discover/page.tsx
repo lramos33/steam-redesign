@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { Image } from "@/lib/next";
 
 import { Badge } from "@/components/ui/Badge";
 import { Discount } from "@/components/ui/Discount";

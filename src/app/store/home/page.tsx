@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { Link } from "@/lib/next";
+import { Link, Image } from "@/lib/next";
 
 import HomeGif from "../../../../public/home.gif";
 

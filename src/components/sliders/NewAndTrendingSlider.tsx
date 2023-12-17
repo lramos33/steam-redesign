@@ -1,10 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
-import { Link } from "@/lib/next";
+import { Link, Image } from "@/lib/next";
 
 import { Icons } from "../others/Icons";
 import { Button } from "../primitives/Button";
