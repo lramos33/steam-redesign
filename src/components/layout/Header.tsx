@@ -9,13 +9,16 @@ import { ProfileMenu } from "../header-actions/ProfileMenu";
 import { LanguageMenu } from "../header-actions/LanguageMenu";
 import { CommunityPopover } from "../header-actions/CommunityPopover";
 import { NotificationsPopover } from "../header-actions/NotificationsPopover";
+import { DrawerMenu } from "./DrawerMenu";
 
 export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="flex items-center justify-between bg-background-main px-3 py-2">
-      <div className="flex items-center gap-8">
+    <header className="hidden items-center justify-between bg-background-main px-3 py-2 lg:flex">
+      <DrawerMenu />
+
+      <div className="hidden items-center gap-8 xl:flex">
         <SteamLogo height="24" fill="#f3f3f3" />
 
         <Link href="/store/home">
@@ -44,7 +47,7 @@ export function Header() {
           <ProfileMenu />
         </div>
 
-        <div className="flex gap-4">
+        <div className="hidden gap-4 xl:flex">
           <Link href="" className="text-sm text-dim">
             Help
           </Link>

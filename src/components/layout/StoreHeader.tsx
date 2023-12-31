@@ -47,7 +47,7 @@ export function StoreHeader() {
       </div>
 
       <div className="flex items-center gap-1.5">
-        <Input.Root className="mr-8">
+        <Input.Root className="mr-8 hidden xl:flex">
           <Input.IconContainer>
             <Input.Main
               id="search-game"
