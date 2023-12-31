@@ -49,10 +49,6 @@ export function Header() {
             Help
           </Link>
 
-          {/* <Link href="" className="flex items-center gap-1 text-sm text-dim">
-            Language <Icons.LuChevronDown />
-          </Link> */}
-
           <LanguageMenu />
         </div>
       </div>
