@@ -5,7 +5,7 @@ import { SteamLogo } from "../vectors/SteamLogo";
 export function Footer() {
   return (
     <footer className="flex justify-center bg-background-highlight">
-      <div className="mb-24 mt-12 flex h-fit w-full max-w-8xl justify-between">
+      <div className="mb-24 mt-12 flex h-fit w-full max-w-8xl justify-between px-6">
         <div className="space-y-8">
           <SteamLogo height="56" width="210" fill="#76808C" />
 
