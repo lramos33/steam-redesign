@@ -1,7 +1,9 @@
 import { MdThumbUp, MdThumbDown } from "react-icons/md";
 import { FaSteam, FaApple, FaWindows, FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import {
+  LuX,
   LuUser,
+  LuMenu,
   LuBell,
   LuHeart,
   LuUsers,
@@ -22,7 +24,9 @@ import {
 } from "react-icons/lu";
 
 export const Icons = {
+  LuX,
   LuUser,
+  LuMenu,
   LuBell,
   LuHeart,
   LuUsers,
