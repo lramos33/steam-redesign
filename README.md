@@ -10,7 +10,7 @@
 
 ## 🚀 Preview
 
-
+![image](public/screenshot.png)
 
 ---
 
