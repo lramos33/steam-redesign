@@ -8,9 +8,13 @@
   <img src="https://shields.io/github/last-commit/lramos33/order-ease">
 </div>
 
+<p>
+  This project was inspired by the Steam redesign that Juxtopposed did on YouTube. <a href="https://www.youtube.com/watch?v=cDY2p1CTkPo">Check out the video here!</a>
+</p>
+
 ## 🚀 Preview
 
-![image](public/screenshot.png)
+![image](public/demo.gif)
 
 ---
 
