@@ -20,7 +20,7 @@ export function NewAndTrendingSlider() {
       modules={[Pagination, Autoplay, Navigation]}
       className="mySwiper relative max-w-[calc(100vw_-_1rem)] pb-12 2xl:max-w-8xl"
       autoplay={{
-        delay: 6000,
+        delay: 8000,
       }}
       navigation={{
         enabled: true,
