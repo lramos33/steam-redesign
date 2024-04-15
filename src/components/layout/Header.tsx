@@ -15,7 +15,7 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-[999] hidden items-center justify-between bg-background-main px-3 py-2 lg:flex">
+    <header className="sticky top-0 z-50 hidden items-center justify-between bg-background-main px-3 py-2 lg:flex">
       <DrawerMenu />
 
       <div className="hidden items-center gap-8 xl:flex">
