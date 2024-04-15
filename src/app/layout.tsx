@@ -17,8 +17,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={cn(MotivaSans.className, "flex min-h-screen flex-col text-main")}>
         <Header />
-        <main className="hidden flex-1 flex-col lg:flex">{children}</main>
-        <main className="flex flex-1 items-center justify-center bg-background-main lg:hidden">Unavailable on small screens</main>
+        <main className="hidden flex-1 flex-col 2xl:flex">{children}</main>
+        <main className="flex flex-1 items-center justify-center bg-background-main 2xl:hidden">Only available for +1440px screens</main>
         <Footer />
       </body>
     </html>
