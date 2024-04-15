@@ -6,6 +6,7 @@ import "../styles/globals.css";
 import "../styles/theme.css";
 
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex flex-1 items-center justify-center bg-background-main 2xl:hidden">Only available for +1440px screens</main>
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
