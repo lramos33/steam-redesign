@@ -22,5 +22,5 @@ Check out the [demo.](https://steam-redesign-nine.vercel.app/)
 ---
 
 <p align="center">
-  Made with ♥ by Leonardo Ramos 👋 <a href="https://www.linkedin.com/in/lramos33/">Get in touch!</a>
+  Made by Leonardo Ramos 👋 <a href="https://www.linkedin.com/in/lramos33/">Get in touch!</a>
 <p>
